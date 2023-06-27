@@ -1,0 +1,293 @@
+* {
+  font-family: system-ui;
+  margin: 0;
+  padding: 0
+}
+
+.dark {
+  background-color: #212121;
+  color: #fff
+}
+
+.light {
+  background-color: #fff;
+  color: #000
+}
+
+body {
+  position: relative;
+  padding-bottom: 130px;
+  min-height: 85vh
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #333;
+  position: relative
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 32px
+}
+
+.navbar button {
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  padding: 5px;
+  background-color: #454545;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff
+}
+
+.link:hover {
+  text-decoration: underline
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  min-height: 72vh;
+  justify-content: center
+}
+
+.container {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  list-style: none
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.34);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.34);
+  box-shadow: 0 0 5px #00000057;
+  position: relative;
+  background-color: #fff
+}
+
+.card__information {
+  text-decoration: none;
+  color: #000
+}
+
+.fav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 100%;
+  background-color: #333
+}
+
+.id {
+  position: absolute;
+  top: 10px;
+  left: 20px
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: .5s;
+  cursor: pointer
+}
+
+.card p {
+  text-align: center;
+  padding: 0;
+  margin: 0
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #aacede
+}
+
+.detail p {
+  margin: 10px
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px
+}
+
+.title {
+  margin-bottom: 30px
+}
+
+.form input,.form button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10
+}
+
+.form button {
+  font-weight: 600;
+  background-color: #686868;
+  color: #fff;
+  cursor: pointer
+}
+
+.message {
+  color: red
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 30px
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px
+}
+
+.dh-logo {
+  width: 200px
+}
+
+.icon {
+  width: 30px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
