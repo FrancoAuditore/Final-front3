@@ -1,12 +1,15 @@
 import styles from './Contacto.module.css'
 
-const Contacto = () =>{
+const Contacto = (props) =>{
 
     console.log(styles)
 
     return (
         <div className={styles.mainContacto}>
-        <h1>contacto</h1>
+        <div className={styles.card}>
+            <img className={styles.cardImg} src="src\assets\medico.avif"/>
+            <p>NAME</p>
+        </div>
         </div>
 
     )
