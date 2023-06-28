@@ -6,6 +6,7 @@ const Navbar = () => {
     <>
       <nav className={styles.navbar}>
        <ul>
+        <img src='../react.svg'></img>
         <li>Dentistas</li>
         <li>Contacto</li>
         <li>Favoritos</li>

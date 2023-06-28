@@ -1,7 +1,7 @@
 .navbar {
     width:100%;
     background-color:#0f88b5;
-    padding: 10px;
+    
     font-size: 18px;
     border:1px solid blue;
     margin:0;
@@ -16,3 +16,16 @@
     align-items: center;
     justify-content:space-between;
   }
+  .navbar button{
+    position: relative;
+    right:15px;  
+    width: 130px;
+      height:40px;
+      background-color: #454545;
+      border: 1px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      color:rgba(255, 255, 0, 0.644);
+      
+    }
+  
