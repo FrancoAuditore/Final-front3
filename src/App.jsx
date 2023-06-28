@@ -1,4 +1,4 @@
-import './App.css'
+import  './styles/styles.css'
 import { Route, Routes } from 'react-router-dom'
 import Contacto from './routes/Contacto'
 import Detail from './routes/Detail'
