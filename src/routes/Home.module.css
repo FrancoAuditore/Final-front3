@@ -1,38 +1,8 @@
-.mainHome{
+
+.cards{
+    display:inline-flex;
     width:100%;
     min-height:100vh;
-    display:flex;
     justify-content: space-around;
-    flex-grow:1 ;
-}
-.cardContainer{
-    display:flex;
-    border: 1px solid blue;
-    width:80%;
-    height:100vh;
-}
-.card{
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:45vh;
-    height:66vh;
-    border: 1px solid black;
-}
-.cardImg{
-    width:100%;
-
-}
-.card p {
-font-size:20px;
-position:relative;
-font-weight: bold;
-}
-.card button {
-    width:15vh;
-    height:3rem;
-    border-radius:10px;
-    position:relative;
-    cursor:pointer;
+    flex-wrap: wrap;
 }
