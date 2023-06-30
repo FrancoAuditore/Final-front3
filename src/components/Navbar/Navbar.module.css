@@ -1,24 +1,26 @@
-.navbar {
+.HeaderContainer {
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
     width:100%;
     background-color:#0f88b5;
-    
     font-size: 18px;
     border:1px solid blue;
     margin:0;
-    padding: 0;
+    padding:0;
     height: 10vh;
-    display:flex;
   }
 
-  .navbar ul{
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-  }
-  .navbar button{
-    position: relative;
-    right:15px;  
+.navbar{
+display:flex;
+justify-content:space-around;
+width:70%;
+padding-right: 5rem;
+}
+
+.HeaderContainer  button{
+  margin-right:2rem;
+  position: relative; 
     width: 130px;
       height:40px;
       background-color: #454545;
@@ -28,4 +30,11 @@
       color:rgba(255, 255, 0, 0.644);
       
     }
-    
+
+    .HeaderContainer img{
+      margin-top:0vh;
+      height:10vh;
+      position:relative;
+      filter:brightness(1.1);
+      mix-blend-mode: multiply;
+    }

@@ -1,36 +1,38 @@
 import { useState } from "react"
 
 const Form=()=>{
-
-    const [error,setError] = useState('')
     const [nombre,setNombre] = useState('')
     const [email,setEmail] = useState('')
 
-    function handleSubmit(e){
+    const [nombreError, setNombreError] = useState("");
+    const [emailError, setEmailError] = useState("")
+
+    const handleSubmit=(e)=>{
         e.preventDefault()
         
         
-        if(nombre.length < 3){
-            
-            console.error("revise el nombre ingresado")
-            setError("Revise el nombre ingresado")
-          }
-          else if(email < 6  ){
-              console.error("el campo tiene que contener @")
-              setError("el campo tiene que contener @")
-          }
-          else{
-          
-          setError()
-          
-          setSubmitedValues({ 
-              nombre,
-              email,
-          })
-          setNombre('')
-          setEmail('')
-        }
-       }
+       // Validación del campo de nombre
+    if (nombre.trim() === "") {
+      setNombreError("Por favor, ingresa tu nombre completo");
+      return;
+    } else {
+      setNombreError("");
+    }
+
+    // Validación del campo de correo electrónico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.trim())) {
+      setEmailError("Por favor, ingresá un correo electrónico válido");
+      return;
+    } else {
+      setEmailError("");
+      console.log("Formulario enviado")
+    }
+
+    setNombre("");
+    setEmail("");
+    setNombreError("");
+    setEmailError("");
 return(
       <>
     Para mas info Completa el siguiente Form y nos comunicaremos con vos:
@@ -41,23 +43,28 @@ return(
       id="nombre"
       placeholder='Ingrese su nombre'
       value={nombre}
-      onChange={handleChangeNombre}
-        required
-    /> 
-    
-    <label htmlFor="email"> Email:</label>
-      <input
-      id="email"
-      placeholder='Ingrese su correo'
-      value={email}
-      onChange={handleChangeEmail}
-        required
-    /> 
+      onChange={(e)=> setNombre (e.target.value)}
+      required
+/> 
+      {nombreError ? <span className="error">{nombreError}</span>:undefined}
     </div>
+    <div>
+
+    <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+      {emailError ? <span className="error">{emailError}</span> :undefined} 
+      </div>
     <button type="submit">Enviar</button>
     </form>
     </>
 )
 
+}
 }
 export default Form

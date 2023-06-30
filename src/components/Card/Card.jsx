@@ -1,16 +1,15 @@
+import React from 'react'
 import styles from './Card.module.css'
 
-const Card =() =>{
-
-    console.log(styles)
+const Card =({userName, name}) =>{
 
     return(
 <div className={styles.card}>
     <img className={styles.cardImg} src="src\assets\medico.avif"/>
-    <p>UserName</p>
-    <p>Name</p>
+    <h2>{userName}</h2>
+    <p>{name}</p>
     <button>
-     <img src='../assets/star.jpg'></img>
+     <img className={styles.star} src='src\assets\estrella.jpg'></img>
     </button>
  </div>
 

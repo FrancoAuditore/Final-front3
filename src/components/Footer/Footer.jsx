@@ -6,8 +6,10 @@ const Footer = () => {
   console.log(styles);
   return (
     <footer className={styles.footer}>
-        <p>Powered by</p>
-        <img src="./img/DH.png" alt='DH-logo' />
+      <div>
+        <h2>Powered by</h2>
+        <img src="src\assets\DH.png" alt='DH-logo' />
+      </div>
     </footer>
   )
 }

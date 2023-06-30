@@ -1,11 +1,14 @@
 
-import { useState } from "react"
-import Form from "../components/Form/Form.jsx"
+import Form from "../components/Form/Form"
 const Contacto = () =>{
     
     
 return(
+    <div>
+    <h1>Contacto</h1>
+    
     <Form />
+    </div>
 )
 
     
