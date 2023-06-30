@@ -33,9 +33,13 @@ const Form=()=>{
     setEmail("");
     setNombreError("");
     setEmailError("");
-return(
-      <>
-    Para mas info Completa el siguiente Form y nos comunicaremos con vos:
+  }
+    return(
+      <div>
+     Para mas info Completa el siguiente Form y nos comunicaremos con vos:
+    <br></br>
+    <br></br>
+
     <form onSubmit={handleSubmit}>
     <div>
       <label htmlFor="nombre"> Nombre completo:</label>
@@ -54,6 +58,7 @@ return(
           <input
             type="email"
             id="email"
+            placeholder="ingrese su email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -62,9 +67,8 @@ return(
       </div>
     <button type="submit">Enviar</button>
     </form>
-    </>
+    </div>
 )
 
-}
 }
 export default Form

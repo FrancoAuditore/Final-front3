@@ -2,7 +2,7 @@ import  './styles/styles.css'
 import { Route, Routes } from 'react-router-dom'
 import Contacto from './routes/Contacto'
 import Detail from './routes/Detail'
-import Favs from './routes/Favs'
+import Favorites from './routes/Favorites'
 import Home from './routes/Home'
 
 function App(){
@@ -15,7 +15,7 @@ function App(){
       <Route path='/' element={<Home/>} />
       <Route path='/contacto' element={<Contacto />}/>
       <Route path='/dentist' element={<Detail /> }/>
-      <Route path='/favs' element={<Favs />} />
+      <Route path='/favs' element={<Favorites />} />
       <Route path='*' element={<Home />}/>
     </Routes>   
     </>
