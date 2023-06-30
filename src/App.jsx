@@ -1,5 +1,5 @@
 import  './styles/styles.css'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contacto from './routes/Contacto'
 import Detail from './routes/Detail'
 import Favorites from './routes/Favorites'
